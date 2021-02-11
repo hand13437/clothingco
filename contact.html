@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Clothing Co. | Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content='ie=edge'>
+        <!-- Style Sheets -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- JS file -->
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a class='logo' href='index.html'><img src='assets/logo.png' alt='logo'></a>
+            <nav>
+                <img class="navIcon" src="assets/menu.svg" alt="menu icon">
+
+                <!-- links shown when menu icon is clicked (on smaller screens) -->
+                <div class="navcont">
+                    <a href='index.html'>HOME</a>
+                    <a href='about.html'>ABOUT</a>
+                    <a href='archive.html'>ARCHIVE</a>
+                    <a href='#'>CONTACT</a>
+                    <a href='cart.html'><img class='carticon' src='assets/carticon.png' alt='carticon'></a>
+            </div>
+            </nav>
+        </header>
+
+        <!-- links shown on larger screens -->
+        <div class="navLinks">
+            <a href='index.html'>HOME</a>
+                <a href='about.html'>ABOUT</a>
+                <a href='archive.html'>ARCHIVE</a>
+                <a href='#'>CONTACT</a>
+                <a href='cart.html'><img class='carticon' src='assets/carticon.png' alt='carticon'></a>
+            </div>
+
+        <!-- contact section -->
+        <section class='contact'>
+          <p class='contacttitle'>Contact Us</p>
+
+          <!-- contact form -->
+          <form class='form'>
+              <!-- container for contact information: name and email -->
+              <div class='contactinfo'>
+
+                    <!-- name -->
+                    <div class='input inputname'>
+                        <label for='name'>Name:</label>
+                            <input type='text' id='name' name='name' placeholder='John Doe'>
+                    </div>
+
+                    <!-- email -->
+                    <div  class='input'>
+                        <label for='contactemail'>Email:</label>
+                            <input id='contactemail' type='email' name='contactemail' placeholder='myname@email.com'>
+                    </div>
+                </div>
+             <!-- container for message -->
+              <div class='textarea input'>
+                  <label for='message'>Your Message or Inquiry:</label>
+                    <textarea id='message' name='message' rows='10'></textarea>
+             </div>
+             <!-- send button -->
+             <div  class='input'>
+                 <input type='submit' id='send' value='send' name='send'>
+             </div>
+          </form>
+        </section>
+
+        <!-- footer -->
+        <footer>
+
+            <!-- newsletter - email subscription prompt -->
+            <section class='newsletter'>
+                <p class='newsletterPrompt'>
+                    Be the first to know about promos and more!
+                </p>
+
+                 <!-- form: email input for subscription -->
+                <form class='subscribe'>
+                    <label for='email'>Join our Newsletter:</label>
+                        <input id='email' type='email' name='email' placeholder='myname@email.com'>
+                        <input id='submit' type='submit' value='submit'>
+                </form>
+            </section>
+
+            <!-- footer navigation: links to other pages -->
+            <section class='footlinks'>
+                <ul>
+                <li><a href='#'>Private Policy</a></li>
+                <li><a href='#'>Terms & Conditions</a></li>
+                <li><a href='#'>Shipping</a></li>
+                <li><a href='#'>Return & Exchange</a></li>
+                <li><a href='#'>FAQs</a></li>
+                </ul>
+            </section>
+
+            <!-- social links -->
+            <section class='social'>
+                <a href='instagram.com'><img src='assets/insta.png' alt='insta icon'></a>
+                <a href='pinterest.com'><img class='pinterest' src='assets/pinterest.png' alt='pinterest icon'></a>
+                <a href='etsy.com'><img src='assets/etsy.png' alt='etsy icon'></a>
+            </section>
+
+            <!-- copyright -->
+            <p class='copyright'>&copy; Clothing.co 2020</p>
+            
+        </footer>
+    </body>
+</html>

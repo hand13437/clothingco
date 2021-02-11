@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content='ie=edge'>
+        <!-- Style Sheets -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- JS file -->
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a class='logo' href='index.html'><img src='assets/logo.png' alt='logo'></a>
+            <nav>
+                <img class="navIcon" src="assets/menu.svg" alt="menu icon">
+
+                <!-- links shown when menu icon is clicked (on smaller screens) -->     
+                <div class="navcont">
+                <a href='index.html'>HOME</a>
+                <a href='about.html'>ABOUT</a>
+                <a href='archive.html'>ARCHIVE</a>
+                <a href='contact.html'>CONTACT</a>
+                <a href='cart.html'>CART (1)</a>
+            </div>
+            </nav>
+        </header>
+
+        <!-- links shown on larger screens -->
+        <div class="navLinks">
+                <a href='index.html'>HOME</a>
+                <a href='about.html'>ABOUT</a>
+                <a href='archive.html'>ARCHIVE</a>
+                <a href='contact.html'>CONTACT</a>
+                <a href='cart.html'>CART (1)</a>
+            </div>
+
+        <!-- product section -->
+        <section class='productpage'>
+
+            <!-- container for (top) main product information: image and main product
+            information: name, price, size selection, product summary, and the add to cart button -->
+            <div class='prodmain'>
+                <img src='assets/productimg.jpg' alt='image of product: Vintage Cashmere Caridgan'>
+
+                <!-- container for all product information -->
+                <div class='prod'>
+                    <h1>Vintage Cashmere Cardigan</h1>
+
+                    <!-- product information: price & size -->
+                    <div class='productinfo'>
+                        <p>$200</p>
+
+                        <!-- selecting size -->
+                        <div class='sizemenu'>
+                            <label for='size'>Size:</label>
+                            <select name='size' id='size'> <!-- size options -->
+                                <option value='xs'>XS</option>
+                                <option value='s'>S</option>
+                                <option value='m'>M</option>
+                                <option value='l'>L</option>
+                                <option value='xl'>XL</option>
+                                <option value='xxl'>XXL</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- size guide link -->
+                    <p id='sizeguide' onclick=''>Size Guide</p> 
+
+                    <!-- product summary -->
+                    <p class='prodsum'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat pellentesque velit, a ultrices lacus.
+                    Proin venenatis, mi nec convallis ornare, nisi elit malesuada velit, eget mattis ex ex in magna. You may be able to custom order at extra cost once the product enters
+                    the <a href='archive.html'>Archive</a>.
+                    </p>
+
+                    <!-- add to cart button -->
+                    <p class='submit'>Add to Cart</p>
+            </div>
+        </div>
+
+            <!-- bottom product info/details -->
+
+                <!-- first product info section: clickable heading -->
+                <div class='prodinfo prodinfo1'>
+                    <p>Product Details</p> <span class='arrow1'>&#8964;</span>
+                </div>
+
+                <!-- first product info section: info shown when clicked -->
+                <div class='moreinfo materialinfo'>
+                    Material:<br>
+                    <ul>
+                        <li>90% Cashmere</li>
+                        <li>10% Cotton</li>
+                    </ul>
+                    Handmade with care.
+                </div>
+
+                <!-- second product info section: clickable heading -->
+                <div class='prodinfo prodinfo2'>
+                    <p>Care, Wash, & Handling Instructions</p> <span class='arrow2'>&#8964;</span>
+                </div>
+
+                 <!-- second product info section: info shown when clicked -->
+                <div class='moreinfo careinfo'>
+                    Dry Cleaning or Hand Wash Only. <br>
+                    Lay flat to dry if handwashing.
+                </div>
+
+                <!-- third product info section: clickable heading -->
+                <div class='prodinfo prodinfo3'>
+                   <p>Shipping Information</p> <span class='arrow3'>&#8964;</span>
+                </div>
+
+                <!-- third product info section: info shown when clicked -->
+                <div class='moreinfo shipinfo'>
+                    Free Standard Shipping (3-5 business days). <br>
+                    Expedited Shipping (2 days): $10. <br>
+                    International Shipping (5-12 business days) $20. <br>
+                    Orders placed during the weekend are shipped on Monday.
+                </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+
+            <!-- newsletter - email subscription prompt -->
+            <section class='newsletter'>
+                <p class='newsletterPrompt'>
+                    Be the first to know about promos and more!
+                </p>
+
+                <!-- form: email input for subscription -->
+                <form class='subscribe'>
+                    <label for='email'>Join our Newsletter:</label>
+                        <input id='email' type='email' name='email' placeholder='myname@email.com'>
+                        <input id='submit' type='submit' value='submit'>
+                </form>
+            </section>
+
+            <!-- footer navigation: links to other pages -->
+            <section class='footlinks'>
+                <ul>
+                <li><a href='#'>Private Policy</a></li>
+                <li><a href='#'>Terms & Conditions</a></li>
+                <li><a href='#'>Shipping</a></li>
+                <li><a href='#'>Return & Exchange</a></li>
+                <li><a href='#'>FAQs</a></li>
+                </ul>
+            </section>
+
+            <!-- social links -->
+            <section class='social'>
+                <a href='instagram.com'><img src='assets/insta.png' alt='insta icon'></a>
+                <a href='pinterest.com'><img class='pinterest' src='assets/pinterest.png' alt='pinterest icon'></a>
+                <a href='etsy.com'><img src='assets/etsy.png' alt='etsy icon'></a>
+            </section>
+
+            <!-- copyright -->
+            <p class='copyright'>&copy; Clothing.co 2020</p>
+            
+        </footer>
+    </body>
+</html>
